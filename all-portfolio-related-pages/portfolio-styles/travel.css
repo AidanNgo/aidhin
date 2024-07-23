@@ -1,0 +1,371 @@
+/*adjustments:
+1. add a fade animation so things load in as a fade*/
+
+.portfolio{
+    font-family: Rubik Glitch Pop;
+    color: black;
+    margin-left: -10px;
+
+}
+
+.header{
+    position: absolute;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.top-grid-section{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.title-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.title-text{
+    margin-top: 80px;
+    margin-left: 25px;
+    font-family: Khula;
+    font-size: 60px;
+    font-weight: 600;
+}
+
+.solid-line1{
+    border: none;
+    border-top: 1px solid black;
+    flex-grow: 1;
+    margin-left: 30px;
+    margin-top: 75px;
+    flex: 0.95;
+}
+
+.solid-line2{
+    display: none;
+
+    border: none;
+    border-top: 1px solid black;
+    flex-grow: 1;
+    margin: 0;
+    padding: 0;
+    margin-left: 25px;
+    margin-bottom: 20px;
+    margin-right: 25px;
+}
+
+
+.photo-gallery-grid{
+    /* background-color: blue; */
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding-left: 100px;
+    padding-right: 100px;
+    gap: 10px;
+
+}
+
+.grid-item{
+    /* background-color: blue; */
+
+    position: relative;
+
+    /* *the below code might be useful* */
+    /* overflow: hidden; */
+    /* height: 20%; */
+    display: grid;
+
+}
+
+.grid-item img {
+    width: 100%;
+    /* height: 100%; */
+    object-fit: cover;
+    display: block;
+    cursor: pointer;
+}
+
+/*the below section are generic classes that can be applied to any images or divs*/
+/* .crop{
+    overflow: hidden;
+} */
+
+.img5-up,
+.img7-up{ /* when we want to move an image up by half-of-a-vertical-image*/
+    margin-top: -83.5%;
+}
+
+/* .img-crop{
+    margin-top: -14%;
+} */
+
+.grid-item.wide{
+    grid-column: span 2;
+}
+
+/* .grid-item.tall{
+    grid-row: span 2;
+} */
+
+
+
+/*the below section is specific to images (probably cannot be applied as generically)*/
+.img9-up,
+.img12-up,
+.img16-up{
+    margin-top: -117.5%;
+}
+.img10-up,
+.img23-up,
+.img27-up,
+.img31-up,
+.img35-up,
+.img39-up,
+.img43-up{
+    margin-top: -16.7%;
+}
+.img13-up,
+.img14-up,
+.img18-up{
+    margin-top: -49.6%;
+}
+.img15-up,
+.img19-up{
+    margin-top: -.2%;
+}
+.img17-up{
+    margin-top: -133%;
+}
+.img20-up{
+    margin-top: -102%;
+}
+.img21-up,
+.img46-up{
+    margin-top: -67.3%;
+}
+.img24-up{
+    margin-top: -119%;
+}
+.img25-up{
+    margin-top: -151%;
+}
+.img28-up,
+.img32-up,
+.img36-up{
+    margin-top: -202%;
+}
+.img29-up,
+.img33-up,
+.img37-up{
+    margin-top: -168%;
+}
+.img40-up{
+    margin-top: -285%;
+}
+.img41-up{
+    margin-top: -251%;
+}
+.img44-up{
+    margin-top: -268%;
+}
+.img45-up{
+    margin-top: -234%;
+}
+.img48-up{
+    margin-top: -193%;
+}
+.img49-up{
+    margin-top: -158.5%;
+}
+.img50-up{
+    margin-top: -8.5%;
+}
+.img52-up{
+    margin-top: -209%;
+}
+.img53-up,
+.img57-up,
+.img61-up{
+    margin-top: -174%;
+}
+.img54-up,
+.img58-up,
+.img62-up,
+.img66-up{
+    margin-top: -83%;
+}
+.img56-up{
+    margin-top: -292%;
+}
+.img60-up,
+.img64-up{
+    margin-top: -308%;
+}
+.img65-up,
+.img69-up{
+    margin-top: -256.2%;
+}
+.img68-up{
+    margin-top: -357%;
+}
+
+/*lightbox styles below*/
+.lightbox{
+    width: 100%;
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.97);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 200;
+
+    
+    display: none;
+}
+
+.lightbox img{
+    max-width: 95%;
+    max-height: 95%;
+    /* object-fit: cover; */
+
+    /* width: 90%;
+    max-width: 600px; */
+}
+
+.close-button{
+    position: absolute;
+    top: 4%;
+    right: 3%;
+    font-size: 23px;
+    font-weight: 700;
+    color: black;
+    cursor: pointer;
+    font-family: Inter;
+}
+
+.close-button:hover{
+    text-decoration: underline;
+}
+
+.prev-button{
+    position: absolute;
+    left: 5%;
+    font-size: 35px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.next-button{
+    position: absolute;
+    right: 5%;
+    font-size: 35px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.prev-button:hover,
+.next-button:hover{
+    text-decoration: underline;
+}
+
+
+/*media queries below*/
+@media (max-width: 1620px){
+    .grid-item img{
+        margin-top: 0;
+    }
+
+    .photo-gallery-grid{
+        grid-template-columns: 1fr 1fr 1fr;
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
+    .grid-item .img4-up,
+    .grid-item .img6-up,
+    .grid-item .img9-up,
+    .grid-item .img12-up{
+        margin-top: -83.6% ;
+    }
+    .grid-item .img11-up,
+    .grid-item .img21-up{
+        margin-top: -50.2%;
+    }
+    .grid-item.wide{
+        grid-column: span 1;
+    }
+    .grid-item .img13-up,
+    .grid-item .img15-up,
+    .grid-item .img18-up{
+        margin-top: -33%;
+    }
+    .grid-item .img16-up{
+        margin-top: -116%;
+    }
+    .grid-item .img19-up{
+        margin-top: -166%;
+    }
+    .grid-item .img22-up,
+    .grid-item .img25-up{
+        margin-top: -232%;
+    }
+    .grid-item .img24-up{
+        margin-top: -117%;
+    }
+    .grid-item .img27-up,
+    .grid-item .img30-up,
+    .grid-item .img33-up,
+    .grid-item .img36-up{
+        margin-top: -200%;
+    }
+    .grid-item .img28-up,
+    .grid-item .img31-up,
+    .grid-item .img34-up,
+    .grid-item .img37-up{
+        margin-top: -248%;
+    }
+    .grid-item .img39-up{
+        margin-top: -283.5%;
+    }
+    .grid-item .img40-up{
+        margin-top: -331%;
+    }
+    /*this work is to be continued...*/
+    
+    
+   
+   
+   
+   
+
+  
+
+}
+
+
+@media (max-width: 590px){
+    .solid-line1{
+        display: none;
+    }
+
+    .solid-line2{
+        display: block;
+    }
+
+    .title-text{
+        font-size: 55px;
+        margin-left: 15px;
+        /* white-space: nowrap; */
+    }
+}
+

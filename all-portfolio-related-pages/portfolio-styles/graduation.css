@@ -1,0 +1,76 @@
+.portfolio{
+    font-family: Rubik Glitch Pop;
+    color: black;
+    margin-left: -10px;
+
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.top-grid-section{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.title-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.title-text{
+    margin-top: 80px;
+    margin-left: 25px;
+    font-family: Khula;
+    font-size: 60px;
+    font-weight: 600;
+}
+
+.solid-line1{
+    border: none;
+    border-top: 1px solid black;
+    flex-grow: 1;
+    margin-left: 30px;
+    margin-top: 75px;
+    flex: 0.95;
+}
+
+.solid-line2{
+    display: none;
+
+    border: none;
+    border-top: 1px solid black;
+    flex-grow: 1;
+    margin: 0;
+    padding: 0;
+    margin-left: 25px;
+    margin-bottom: 20px;
+    margin-right: 25px;
+}
+
+
+
+
+
+
+
+@media (max-width: 590px){
+    .solid-line1{
+        display: none;
+    }
+
+    .solid-line2{
+        display: block;
+    }
+
+    .title-text{
+        font-size: 55px;
+        margin-left: 15px;
+        /* white-space: nowrap; */
+    }
+}

@@ -1,0 +1,78 @@
+
+.header{
+    background-color: #106C89;
+    height: 75px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 200;
+}
+
+
+.my-name{
+    font-family: Inter;
+    color: white;
+    font-size: 35px;
+    font-weight: 700;
+    letter-spacing: 7px;
+    margin-left: 25px;
+}
+
+.pages-row{
+    /* background-color: blue; */
+    /* border-style: solid;
+    border-color: black;
+    border-width: 1px; */
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 415px;
+    margin-right: 27px;
+}
+
+.about-me,
+.home,
+.portfolio,
+.contact,
+.price{
+    /* background-color: blue; */
+    /* border-style: solid;
+    border-color: black;
+    border-width: 1px; */
+
+    font-family: Inter;
+    font-weight: 300;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    width: 70px;
+}
+
+.about-me{
+    margin-left: -15px;
+}
+
+.portfolio{
+    margin-left: -6px;
+}
+
+.price{
+    margin-left: -15px;
+}
+
+.home:hover,
+.about-me:hover,
+.portfolio:hover,
+.contact:hover,
+.price:hover{
+    /* background-color: blue; */
+    color: black;
+    font-family: Rubik Glitch Pop;
+
+}
