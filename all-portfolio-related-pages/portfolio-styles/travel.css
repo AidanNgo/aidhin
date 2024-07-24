@@ -1,5 +1,11 @@
-/*adjustments:
-1. add a fade animation so things load in as a fade*/
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
 
 .portfolio{
     font-family: Rubik Glitch Pop;
@@ -8,62 +14,7 @@
 
 }
 
-.header{
-    position: absolute;
-}
-
-html, body{
-    height: 100%;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-}
-
-.top-grid-section{
-    display: grid;
-    grid-template-columns: 1fr;
-}
-
-.title-container{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-.title-text{
-    margin-top: 80px;
-    margin-left: 25px;
-    font-family: Khula;
-    font-size: 60px;
-    font-weight: 600;
-}
-
-.solid-line1{
-    border: none;
-    border-top: 1px solid black;
-    flex-grow: 1;
-    margin-left: 30px;
-    margin-top: 75px;
-    flex: 0.95;
-}
-
-.solid-line2{
-    display: none;
-
-    border: none;
-    border-top: 1px solid black;
-    flex-grow: 1;
-    margin: 0;
-    padding: 0;
-    margin-left: 25px;
-    margin-bottom: 20px;
-    margin-right: 25px;
-}
-
-
 .photo-gallery-grid{
-    /* background-color: blue; */
-
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     padding-left: 100px;
@@ -72,49 +23,21 @@ html, body{
 
 }
 
-.grid-item{
-    /* background-color: blue; */
-
-    position: relative;
-
-    /* *the below code might be useful* */
-    /* overflow: hidden; */
-    /* height: 20%; */
-    display: grid;
-
-}
-
 .grid-item img {
     width: 100%;
-    /* height: 100%; */
     object-fit: cover;
     display: block;
     cursor: pointer;
 }
 
-/*the below section are generic classes that can be applied to any images or divs*/
-/* .crop{
-    overflow: hidden;
-} */
-
 .img5-up,
-.img7-up{ /* when we want to move an image up by half-of-a-vertical-image*/
+.img7-up{
     margin-top: -83.5%;
 }
-
-/* .img-crop{
-    margin-top: -14%;
-} */
 
 .grid-item.wide{
     grid-column: span 2;
 }
-
-/* .grid-item.tall{
-    grid-row: span 2;
-} */
-
-
 
 /*the below section is specific to images (probably cannot be applied as generically)*/
 .img9-up,
@@ -228,18 +151,22 @@ html, body{
     align-items: center;
     justify-content: center;
     z-index: 200;
-
-    
     display: none;
+    animation: fadeIn 0.2s ease-in;
 }
 
 .lightbox img{
     max-width: 95%;
     max-height: 95%;
-    /* object-fit: cover; */
+}
 
-    /* width: 90%;
-    max-width: 600px; */
+.close-button,
+.prev-button,
+.next-button{
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .close-button{
@@ -257,20 +184,20 @@ html, body{
     text-decoration: underline;
 }
 
-.prev-button{
+.prev-button,
+.next-button{
     position: absolute;
-    left: 5%;
     font-size: 35px;
     font-weight: 700;
     cursor: pointer;
 }
 
+.prev-button{
+    left: 5%;
+}
+
 .next-button{
-    position: absolute;
     right: 5%;
-    font-size: 35px;
-    font-weight: 700;
-    cursor: pointer;
 }
 
 .prev-button:hover,
@@ -334,24 +261,162 @@ html, body{
     .grid-item .img37-up{
         margin-top: -248%;
     }
-    .grid-item .img39-up{
+    .grid-item .img39-up,
+    .grid-item .img42-up{
         margin-top: -283.5%;
     }
-    .grid-item .img40-up{
+    .grid-item .img40-up,
+    .grid-item .img43-up,
+    .grid-item .img46-up{
         margin-top: -331%;
     }
-    /*this work is to be continued...*/
-    
-    
-   
-   
-   
-   
-
-  
-
+    .grid-item .img45-up,
+    .grid-item .img48-up{
+        margin-top: -367%;
+    }
+    .grid-item .img49-up{
+        margin-top: -272%;
+    }
+    .grid-item .img51-up{
+        margin-top: -308.1%;
+    }
+    .grid-item .img52-up{
+        margin-top: -213.5%;
+    }
+    .grid-item .img54-up,
+    .grid-item .img57-up{
+        margin-top: -233%;
+    }
+    .grid-item .img55-up{
+        margin-top: -296%;
+    }
+    .grid-item .img58-up,
+    .grid-item .img61-up{
+        margin-top: -279%;
+    }
+    .grid-item .img60-up,
+    .grid-item .img63-up{
+        margin-top: -216%;
+    }
+    .grid-item .img64-up{
+        margin-top: -362%;
+    }
+    .grid-item .img66-up,
+    .grid-item .img69-up{
+        margin-top: -368%;
+    }
+    .grid-item .img67-up{
+        margin-top: -412%;
+    }
+    .grid-item .img68-up{
+        margin-top: -259%;
+        margin-left: -102%;
+    }
 }
 
+@media (max-width: 1275px) {
+    .grid-item img {
+        margin-top: 0 !important;
+        margin-left: 0 !important;
+    }
+    .photo-gallery-grid{
+        grid-template-columns: 1fr 1fr;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .photo-gallery-grid .grid-item .img63-up
+    {
+        margin-top: -28% !important;
+    }
+    .photo-gallery-grid .grid-item .img66-up,
+    .photo-gallery-grid .grid-item .img68-up
+    {
+        margin-top: -22% !important;
+    }
+    .photo-gallery-grid .grid-item .img11-up,
+    .photo-gallery-grid .grid-item .img13-up
+    {
+        margin-top: -32.5% !important;
+    }
+    .photo-gallery-grid .grid-item .img54-up,
+    .photo-gallery-grid .grid-item .img56-up
+    {
+        margin-top: -40% !important;
+    }
+    .photo-gallery-grid .grid-item .img51-up
+    {
+        margin-top: -43% !important;
+    }
+    .photo-gallery-grid .grid-item .img19-up
+    {
+        margin-top: -49% !important;
+    }
+    
+    .photo-gallery-grid .grid-item .img58-up,
+    .photo-gallery-grid .grid-item .img60-up,
+    .photo-gallery-grid .grid-item .img62-up
+    {
+        margin-top: -56.1% !important;
+    }
+    .photo-gallery-grid .grid-item .img17-up{
+        margin-top: -66% !important;
+    }
+    .photo-gallery-grid .grid-item .img47-up{
+        margin-top: -81% !important;
+    }
+  
+    .photo-gallery-grid .grid-item .img3-up{
+        margin-top: -83% !important;
+    }
+
+    .photo-gallery-grid .grid-item .img37-up,
+    .photo-gallery-grid .grid-item .img43-up,
+    .photo-gallery-grid .grid-item .img45-up{
+        margin-top: -98% !important;
+    }
+    .photo-gallery-grid .grid-item .img9-up,
+    .photo-gallery-grid .grid-item .img15-up{
+        margin-top: -116% !important;
+    }
+    .photo-gallery-grid .grid-item .img21-up{
+        margin-top: -116% !important;
+    }
+    .photo-gallery-grid .grid-item .img49-up{
+        margin-top: -139.1% !important;
+    }
+    .photo-gallery-grid .grid-item .img5-up,
+    .photo-gallery-grid .grid-item .img7-up,
+    .photo-gallery-grid .grid-item .img25-up{
+        margin-top: -166% !important;
+    }
+  
+    .photo-gallery-grid .grid-item .img27-up,
+    .photo-gallery-grid .grid-item .img29-up,
+    .photo-gallery-grid .grid-item .img31-up,
+    .photo-gallery-grid .grid-item .img33-up,
+    .photo-gallery-grid .grid-item .img35-up,
+    .photo-gallery-grid .grid-item .img39-up,
+    .photo-gallery-grid .grid-item .img41-up
+    {
+        margin-top: -182% !important;
+    }
+    .photo-gallery-grid .grid-item .img23-up{
+        margin-top: -199% !important;
+    }
+}
+
+@media (max-width: 870px){
+    .inner-body-container .photo-gallery-grid .grid-item img {
+        margin-top: 0 !important;
+        margin-left: 0 !important;
+    }
+
+    .photo-gallery-grid{
+        grid-template-columns: 1fr;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
 
 @media (max-width: 590px){
     .solid-line1{

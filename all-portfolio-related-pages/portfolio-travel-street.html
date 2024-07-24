@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>travel + street</title>
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,264 +14,330 @@
         <link href="https://fonts.googleapis.com/css2?family=Khula:wght@300;400;700&display=swap" rel="stylesheet">
 
         <link rel="stylesheet" href="../general-styles/header.css">
+
         <link rel="stylesheet" href="portfolio-styles/travel.css">
+        <!-- <link href="portfolio-styles/travel.css" rel="preload" as="style" onload="this.rel='stylesheet'"> -->
+
+        <style>
+            .header{
+                position: absolute;
+            }
+
+            html, body{
+                height: 100%;
+                width: 100%;
+                margin: 0;
+                padding: 0;
+            }
+
+            .top-grid-section{
+                display: grid;
+                grid-template-columns: 1fr;
+            }
+
+            .title-container{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+            }
+
+            .title-text{
+                margin-top: 80px;
+                margin-left: 25px;
+                font-family: Khula;
+                font-size: 60px;
+                font-weight: 600;
+            }
+
+            .solid-line1{
+                border: none;
+                border-top: 1px solid black;
+                flex-grow: 1;
+                margin-left: 30px;
+                margin-top: 75px;
+                flex: 0.95;
+            }
+
+            .solid-line2{
+                display: none;
+
+                border: none;
+                border-top: 1px solid black;
+                flex-grow: 1;
+                margin: 0;
+                padding: 0;
+                margin-left: 25px;
+                margin-bottom: 20px;
+                margin-right: 25px;
+            }
+
+            .hidden{
+                opacity: 0;
+                transition: all 0.3s;
+            }
+
+            .show{
+                opacity: 1;
+            }
+        </style>
 
     </head>
     <body>
 
-        <div class="header">
-            <div class="my-name">
-                AID.HIN
+        <div class="inner-body-container">
+            <div class="header">
+                <div class="my-name">
+                    AID.HIN
+                </div>
+                <div class="pages-row">
+                    <a href="../home.html" class="home">
+                        home
+                    </a>
+                    <a href="../about.html" class="about-me">
+                        about
+                    </a>
+                    <a href="portfolio.html" class="portfolio">
+                        portfolio
+                    </a>
+                    <a href="../contact.html" class="contact">
+                        contact
+                    </a>
+                    <a href="../price.html" class="price">
+                        price
+                    </a>
+                </div>
             </div>
-            <div class="pages-row">
-				<a href="../home.html" class="home">
-					home
-				</a>
-				<a href="../about.html" class="about-me">
-					about
-				</a>
-				<a href="../portfolio.html" class="portfolio">
-					portfolio
-				</a>
-				<a href="../contact.html" class="contact">
-					contact
-				</a>
-				<a href="../price.html" class="price">
-                    price
-				</a>
+    
+            <div class="top-grid-section">
+                <div class="title-container">
+                    <div class="title-text">travel + street</div>
+                    <hr class="solid-line1">
+                </div>
+                <hr class="solid-line2">
+            </div>
+    
+            <div class="photo-gallery-grid">
+                <div class="grid-item">
+                    <img src="photographs/travel-street-pics/image1.jpg" class="hidden" data-index="1">
+                </div>
+    
+                <div class="grid-item">
+                    <img src="photographs/travel-street-pics/image2.jpg" class="img2-up hidden" data-index="2">
+                </div>
+    
+                <div class="grid-item">
+                    <img src="photographs/travel-street-pics/image3.jpg" class="img3-up hidden" data-index="3">
+                </div>
+                <div class="grid-item">
+                    <img src="photographs/travel-street-pics/image4.jpg" class="img4-up hidden" data-index="4" >
+                </div>
+                <div class="grid-item">
+                    <img src="photographs/travel-street-pics/image5.jpg" class="img5-up hidden" data-index="5">
+                </div>
+                <div class="grid-item">
+                    <img src="photographs/travel-street-pics/image6.jpg" class="img6-up hidden" data-index="6">
+                </div>
+                <div class="grid-item">
+                    <img src="photographs/travel-street-pics/image7.jpg" class="img7-up hidden" data-index="7">
+                </div>
+                <div class="grid-item">
+                    <img src="photographs/travel-street-pics/image8.jpg" class="img8-up hidden" data-index="8">
+                </div>
+                <div class="grid-item">
+                    <img src="photographs/travel-street-pics/image9.jpg" class="img9-up hidden" data-index="9">
+                </div>
+                <div class="grid-item wide">
+                    <img src="photographs/travel-street-pics/image10.jpg" class="img10-up hidden" data-index="10">
+                </div>
+                <div class="grid-item">
+                    <img src="photographs/travel-street-pics/image11.jpg" class="img11-up hidden" data-index="11">
+                </div>
+                <div class="grid-item">
+                    <img src="photographs/travel-street-pics/image12.jpg" class="img12-up hidden" data-index="12">
+                </div>
+                <div class="grid-item">
+                    <img src="photographs/travel-street-pics/image13.jpg" class="img13-up hidden" data-index="13">
+                </div>
+                <div class="grid-item">
+                    <img src="photographs/travel-street-pics/image14.jpg" class="img14-up hidden" data-index="14">
+                </div>
+                <div class="grid-item">
+                    <img src="photographs/travel-street-pics/image15.jpg" class="img15-up hidden" data-index="15">
+                </div>
+                <div class="grid-item">
+                    <img src="photographs/travel-street-pics/image16.jpg" class="img16-up hidden" data-index="16">
+                </div>
+                <div class="grid-item">
+                    <img src="photographs/travel-street-pics/image17.jpg" class="img17-up hidden" data-index="17">
+                </div>
+                <div class="grid-item">
+                    <img src="photographs/travel-street-pics/image18.jpg" class="img18-up hidden" data-index="18">
+                </div>
+                <div class="grid-item">
+                    <img src="photographs/travel-street-pics/image19.png" class="img19-up hidden" data-index="19">
+                </div>
+                <div class="grid-item">
+                    <img src="photographs/travel-street-pics/image20.jpg" class="img20-up hidden" data-index="20">
+                </div>
+                
+                <div class="grid-item">
+                    <img src="photographs/travel-street-pics/image21.jpg" class="img21-up hidden" data-index="21">
+                </div>
+                <div class="grid-item">
+                    <img src="photographs/travel-street-pics/image22.jpg" class="img22-up hidden" data-index="22">
+                </div>
+                <div class="grid-item">
+                    <img src="photographs/travel-street-pics/image23.jpg" class="img23-up hidden" data-index="23">
+                </div>
+                <div class="grid-item">
+                    <img src="photographs/travel-street-pics/image24.jpg" class="img24-up hidden" data-index="24">
+                </div>
+                <div class="grid-item">
+                    <img src="photographs/travel-street-pics/image25.jpg" class="img25-up hidden" data-index="25">
+                </div>
+                <div class="grid-item">
+                    <img src="photographs/travel-street-pics/image26.jpg" class="hidden" data-index="26">
+                </div>
+                <div class="grid-item">
+                    <img src="photographs/travel-street-pics/image27.jpg" class="img27-up hidden" data-index="27">
+                </div>
+                <div class="grid-item">
+                    <img src="photographs/travel-street-pics/image28.jpg" class="img28-up hidden" data-index="28">
+                </div>
+                <div class="grid-item">
+                    <img src="photographs/travel-street-pics/image29.jpg" class="img29-up hidden" data-index="29">
+                </div>
+                <div class="grid-item">
+                    <img src="photographs/travel-street-pics/image30.jpg" class="img30-up hidden" data-index="30">
+                </div>
+                <div class="grid-item">
+                    <img src="photographs/travel-street-pics/image31.jpg" class="img31-up hidden" data-index="31">
+                </div>
+                <div class="grid-item">
+                    <img src="photographs/travel-street-pics/image32.jpg" class="img32-up hidden" data-index="32">
+                </div>
+                <div class="grid-item">
+                    <img src="photographs/travel-street-pics/image33.jpg" class="img33-up hidden" data-index="33">
+                </div>
+                <div class="grid-item">
+                    <img src="photographs/travel-street-pics/image34.jpg" class="img34-up hidden" data-index="34">
+                </div>
+                <div class="grid-item">
+                    <img src="photographs/travel-street-pics/image35.png" class="img35-up hidden" data-index="35">
+                </div>
+                <div class="grid-item">
+                    <img src="photographs/travel-street-pics/image36.jpg" class="img36-up hidden" data-index="36">
+                </div>
+                <div class="grid-item">
+                    <img src="photographs/travel-street-pics/image37.jpg" class="img37-up hidden" data-index="37">
+                </div>
+                <div class="grid-item">
+                    <img src="photographs/travel-street-pics/image38.jpg" class="img38-up hidden" data-index="38">
+                </div>
+                <div class="grid-item">
+                    <img src="photographs/travel-street-pics/image39.jpg" class="img39-up hidden" data-index="39">
+                </div>
+                <div class="grid-item">
+                    <img src="photographs/travel-street-pics/image40.png" class="img40-up hidden" data-index="40">
+                </div>
+                <div class="grid-item">
+                    <img src="photographs/travel-street-pics/image41.jpg" class="img41-up hidden" data-index="41">
+                </div>
+                <div class="grid-item">
+                    <img src="photographs/travel-street-pics/image42.jpg" class="img42-up hidden" data-index="42">
+                </div>
+                <div class="grid-item">
+                    <img src="photographs/travel-street-pics/image43.jpg" class="img43-up hidden" data-index="43">
+                </div>
+                <div class="grid-item">
+                    <img src="photographs/travel-street-pics/image44.jpg" class="img44-up hidden" data-index="44">
+                </div>
+                <div class="grid-item">
+                    <img src="photographs/travel-street-pics/image45.jpg" class="img45-up hidden" data-index="45">
+                </div>
+                <div class="grid-item">
+                    <img src="photographs/travel-street-pics/image46.jpg" class="img46-up hidden" data-index="46">
+                </div>
+                <div class="grid-item">
+                    <img src="photographs/travel-street-pics/image47.jpg" class="img47-up hidden" data-index="47">
+                </div>
+                <div class="grid-item">
+                    <img src="photographs/travel-street-pics/image48.png" class="img48-up hidden" data-index="48">
+                </div>
+                <div class="grid-item">
+                    <img src="photographs/travel-street-pics/image49.jpg" class="img49-up hidden" data-index="49">
+                </div>
+                <div class="grid-item">
+                    <img src="photographs/travel-street-pics/image50.png" class="img50-up hidden" data-index="50">
+                </div>
+                <div class="grid-item">
+                    <img src="photographs/travel-street-pics/image51.png" class="img51-up hidden" data-index="51">
+                </div>
+                <div class="grid-item">
+                    <img src="photographs/travel-street-pics/image52.jpg" class="img52-up hidden" data-index="52">
+                </div>
+                <div class="grid-item">
+                    <img src="photographs/travel-street-pics/image53.jpg" class="img53-up hidden" data-index="53">
+                </div>
+                <div class="grid-item">
+                    <img src="photographs/travel-street-pics/image54.jpg" class="img54-up hidden" data-index="54">
+                </div>
+                <div class="grid-item">
+                    <img src="photographs/travel-street-pics/image55.jpg" class="img55-up hidden" data-index="55">
+                </div>
+                <div class="grid-item">
+                    <img src="photographs/travel-street-pics/image56.jpg" class="img56-up hidden" data-index="56">
+                </div>
+                <div class="grid-item">
+                    <img src="photographs/travel-street-pics/image57.jpg" class="img57-up hidden" data-index="57">
+                </div>
+                <div class="grid-item">
+                    <img src="photographs/travel-street-pics/image58.jpg" class="img58-up hidden" data-index="58">
+                </div>
+                <div class="grid-item">
+                    <img src="photographs/travel-street-pics/image59.jpg" class="hidden" data-index="59">
+                </div>
+                <div class="grid-item">
+                    <img src="photographs/travel-street-pics/image60.jpg" class="img60-up hidden" data-index="60">
+                </div>
+                <div class="grid-item">
+                    <img src="photographs/travel-street-pics/image61.jpg" class="img61-up hidden" data-index="61">
+                </div>
+                <div class="grid-item">
+                    <img src="photographs/travel-street-pics/image62.jpg" class="img62-up hidden" data-index="62">
+                </div>
+                <div class="grid-item">
+                    <img src="photographs/travel-street-pics/image63.png" class="img63-up hidden" data-index="63">
+                </div>
+                <div class="grid-item">
+                    <img src="photographs/travel-street-pics/image64.jpg" class="img64-up hidden" data-index="64">
+                </div>
+                <div class="grid-item">
+                    <img src="photographs/travel-street-pics/image65.png" class="img65-up hidden" data-index="65">
+                </div>
+                <div class="grid-item">
+                    <img src="photographs/travel-street-pics/image66.jpg" class="img66-up hidden" data-index="66">
+                </div>
+                <div class="grid-item">
+                    <img src="photographs/travel-street-pics/image67.jpg" class="img67-up hidden" data-index="67">
+                </div>
+                <div class="grid-item">
+                    <img src="photographs/travel-street-pics/image68.jpg" class="img68-up hidden" data-index="68">
+                </div>
+                <div class="grid-item">
+                    <img src="photographs/travel-street-pics/image69.jpg" class="img69-up hidden" data-index="69">
+                </div>
+            </div>
+    
+            <div class="lightbox">
+                <img src="photographs/travel-street-pics/image1.jpg" id="currentImage">
+                <div class="close-button" onclick="closeLightbox()">X</div>
+                <div class="prev-button" onclick="plusImages(-1)">&lt;</div>
+                <div class="next-button" onclick="plusImages(1)">&gt;</div>
             </div>
         </div>
-
-        <div class="top-grid-section">
-            <div class="title-container">
-                <div class="title-text">travel + street</div>
-                <hr class="solid-line1">
-            </div>
-            <hr class="solid-line2">
-        </div>
-
-        <div class="photo-gallery-grid">
-            <div class="grid-item">
-                <img src="photographs/travel-street-pics/image1.jpg" data-index="1">
-            </div>
-
-            <div class="grid-item">
-                <img src="photographs/travel-street-pics/image2.jpg" data-index="2">
-            </div>
-
-            <div class="grid-item">
-                <img src="photographs/travel-street-pics/image3.jpg" data-index="3">
-            </div>
-            <div class="grid-item">
-                <img src="photographs/travel-street-pics/image4.jpg" class="img4-up" data-index="4" >
-            </div>
-            <div class="grid-item">
-                <img src="photographs/travel-street-pics/image5.jpg" class="img5-up" data-index="5">
-            </div>
-            <div class="grid-item">
-                <img src="photographs/travel-street-pics/image6.jpg" class="img6-up" data-index="6">
-            </div>
-            <div class="grid-item">
-                <img src="photographs/travel-street-pics/image7.jpg" class="img7-up" data-index="7">
-            </div>
-            <div class="grid-item">
-                <img src="photographs/travel-street-pics/image8.jpg" data-index="8">
-            </div>
-            <div class="grid-item">
-                <img src="photographs/travel-street-pics/image9.jpg" class="img9-up" data-index="9">
-            </div>
-            <div class="grid-item wide">
-                <img src="photographs/travel-street-pics/image10.jpg" class="img10-up" data-index="10">
-            </div>
-            <div class="grid-item">
-                <img src="photographs/travel-street-pics/image11.jpg" class="img11-up" data-index="11">
-            </div>
-            <div class="grid-item">
-                <img src="photographs/travel-street-pics/image12.jpg" class="img12-up" data-index="12">
-            </div>
-            <div class="grid-item">
-                <img src="photographs/travel-street-pics/image13.jpg" class="img13-up" data-index="13">
-            </div>
-            <div class="grid-item">
-                <img src="photographs/travel-street-pics/image14.jpg" class="img14-up" data-index="14">
-            </div>
-            <div class="grid-item">
-                <img src="photographs/travel-street-pics/image15.jpg" class="img15-up" data-index="15">
-            </div>
-            <div class="grid-item">
-                <img src="photographs/travel-street-pics/image16.jpg" class="img16-up" data-index="16">
-            </div>
-            <div class="grid-item">
-                <img src="photographs/travel-street-pics/image17.jpg" class="img17-up" data-index="17">
-            </div>
-            <div class="grid-item">
-                <img src="photographs/travel-street-pics/image18.jpg" class="img18-up" data-index="18">
-            </div>
-            <div class="grid-item">
-                <img src="photographs/travel-street-pics/image19.png" class="img19-up" data-index="19">
-            </div>
-            <div class="grid-item">
-                <img src="photographs/travel-street-pics/image20.jpg" class="img20-up" data-index="20">
-            </div>
-            
-            <div class="grid-item">
-                <img src="photographs/travel-street-pics/image21.jpg" class="img21-up" data-index="21">
-            </div>
-            <div class="grid-item">
-                <img src="photographs/travel-street-pics/image22.jpg" class="img22-up" data-index="22">
-            </div>
-            <div class="grid-item">
-                <img src="photographs/travel-street-pics/image23.jpg" class="img23-up" data-index="23">
-            </div>
-            <div class="grid-item">
-                <img src="photographs/travel-street-pics/image24.jpg" class="img24-up" data-index="24">
-            </div>
-            <div class="grid-item">
-                <img src="photographs/travel-street-pics/image25.jpg" class="img25-up" data-index="25">
-            </div>
-            <div class="grid-item">
-                <img src="photographs/travel-street-pics/image26.jpg" data-index="26">
-            </div>
-            <div class="grid-item">
-                <img src="photographs/travel-street-pics/image27.jpg" class="img27-up" data-index="27">
-            </div>
-            <div class="grid-item">
-                <img src="photographs/travel-street-pics/image28.jpg" class="img28-up" data-index="28">
-            </div>
-            <div class="grid-item">
-                <img src="photographs/travel-street-pics/image29.jpg" class="img29-up" data-index="29">
-            </div>
-            <div class="grid-item">
-                <img src="photographs/travel-street-pics/image30.jpg" class="img30-up" data-index="30">
-            </div>
-            <div class="grid-item">
-                <img src="photographs/travel-street-pics/image31.jpg" class="img31-up" data-index="31">
-            </div>
-            <div class="grid-item">
-                <img src="photographs/travel-street-pics/image32.jpg" class="img32-up" data-index="32">
-            </div>
-            <div class="grid-item">
-                <img src="photographs/travel-street-pics/image33.jpg" class="img33-up" data-index="33">
-            </div>
-            <div class="grid-item">
-                <img src="photographs/travel-street-pics/image34.jpg" class="img34-up" data-index="34">
-            </div>
-            <div class="grid-item">
-                <img src="photographs/travel-street-pics/image35.png" class="img35-up" data-index="35">
-            </div>
-            <div class="grid-item">
-                <img src="photographs/travel-street-pics/image36.jpg" class="img36-up" data-index="36">
-            </div>
-            <div class="grid-item">
-                <img src="photographs/travel-street-pics/image37.jpg" class="img37-up" data-index="37">
-            </div>
-            <div class="grid-item">
-                <img src="photographs/travel-street-pics/image38.jpg" class="img38-up" data-index="38">
-            </div>
-            <div class="grid-item">
-                <img src="photographs/travel-street-pics/image39.jpg" class="img39-up" data-index="39">
-            </div>
-            <div class="grid-item">
-                <img src="photographs/travel-street-pics/image40.png" class="img40-up" data-index="40">
-            </div>
-            <div class="grid-item">
-                <img src="photographs/travel-street-pics/image41.jpg" class="img41-up" data-index="41">
-            </div>
-            <div class="grid-item">
-                <img src="photographs/travel-street-pics/image42.jpg" class="img42-up" data-index="42">
-            </div>
-            <div class="grid-item">
-                <img src="photographs/travel-street-pics/image43.jpg" class="img43-up" data-index="43">
-            </div>
-            <div class="grid-item">
-                <img src="photographs/travel-street-pics/image44.jpg" class="img44-up" data-index="44">
-            </div>
-            <div class="grid-item">
-                <img src="photographs/travel-street-pics/image45.jpg" class="img45-up" data-index="45">
-            </div>
-            <div class="grid-item">
-                <img src="photographs/travel-street-pics/image46.jpg" class="img46-up" data-index="46">
-            </div>
-            <div class="grid-item">
-                <img src="photographs/travel-street-pics/image47.jpg" data-index="47">
-            </div>
-            <div class="grid-item">
-                <img src="photographs/travel-street-pics/image48.png" class="img48-up" data-index="48">
-            </div>
-            <div class="grid-item">
-                <img src="photographs/travel-street-pics/image49.jpg" class="img49-up" data-index="49">
-            </div>
-            <div class="grid-item">
-                <img src="photographs/travel-street-pics/image50.png" class="img50-up" data-index="50">
-            </div>
-            <div class="grid-item">
-                <img src="photographs/travel-street-pics/image51.png" data-index="51">
-            </div>
-            <div class="grid-item">
-                <img src="photographs/travel-street-pics/image52.jpg" class="img52-up" data-index="52">
-            </div>
-            <div class="grid-item">
-                <img src="photographs/travel-street-pics/image53.jpg" class="img53-up" data-index="53">
-            </div>
-            <div class="grid-item">
-                <img src="photographs/travel-street-pics/image54.jpg" class="img54-up" data-index="54">
-            </div>
-            <div class="grid-item">
-                <img src="photographs/travel-street-pics/image55.jpg" data-index="55">
-            </div>
-            <div class="grid-item">
-                <img src="photographs/travel-street-pics/image56.jpg" class="img56-up" data-index="56">
-            </div>
-            <div class="grid-item">
-                <img src="photographs/travel-street-pics/image57.jpg" class="img57-up" data-index="57">
-            </div>
-            <div class="grid-item">
-                <img src="photographs/travel-street-pics/image58.jpg" class="img58-up" data-index="58">
-            </div>
-            <div class="grid-item">
-                <img src="photographs/travel-street-pics/image59.jpg" data-index="59">
-            </div>
-            <div class="grid-item">
-                <img src="photographs/travel-street-pics/image60.jpg" class="img60-up" data-index="60">
-            </div>
-            <div class="grid-item">
-                <img src="photographs/travel-street-pics/image61.jpg" class="img61-up" data-index="61">
-            </div>
-            <div class="grid-item">
-                <img src="photographs/travel-street-pics/image62.jpg" class="img62-up" data-index="62">
-            </div>
-            <div class="grid-item">
-                <img src="photographs/travel-street-pics/image63.png" data-index="63">
-            </div>
-            <div class="grid-item">
-                <img src="photographs/travel-street-pics/image64.jpg" class="img64-up" data-index="64">
-            </div>
-            <div class="grid-item">
-                <img src="photographs/travel-street-pics/image65.png" class="img65-up" data-index="65">
-            </div>
-            <div class="grid-item">
-                <img src="photographs/travel-street-pics/image66.jpg" class="img66-up" data-index="66">
-            </div>
-            <div class="grid-item">
-                <img src="photographs/travel-street-pics/image67.jpg" data-index="67">
-            </div>
-            <div class="grid-item">
-                <img src="photographs/travel-street-pics/image68.jpg" class="img68-up" data-index="68">
-            </div>
-            <div class="grid-item">
-                <img src="photographs/travel-street-pics/image69.jpg" class="img69-up" data-index="69">
-            </div>
-        </div>
-
-        <div class="lightbox">
-            <img src="photographs/travel-street-pics/image1.jpg" id="currentImage">
-            <div class="close-button" onclick="closeLightbox()">X</div>
-            <div class="prev-button" onclick="plusImages(-1)">&lt;</div>
-            <div class="next-button" onclick="plusImages(1)">&gt;</div>
-        </div>
-
-
-        <script src="portfolio-js/travel.js"></script>
+        
+        <script src="portfolio-js/photo-gallery.js"></script>
 
     </body>
 </html>
