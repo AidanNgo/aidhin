@@ -1,0 +1,144 @@
+/*adjustments to be made:
+1. maybe make the contact info interactive buttons that lead to their respective stuff*/
+
+.contact,
+.small-contact{
+    font-family: Rubik Glitch Pop;
+    color: black;
+}
+
+html, body{
+    /* height: 100%;
+    width: 100%; */
+    margin: 0;
+    padding: 0;
+    padding-top: 140px;
+    display: flex;
+    justify-content: center;
+}
+
+.outer-flex-container{
+    /* background-color: blue; */
+
+    height: 300px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.inner-flex-container{
+    /* background-color: blue; */
+
+    font-family: Inter;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+
+}
+
+
+.email-container{
+    /* background-color: red; */
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.email-icon{
+    font-family: Inter;
+    font-weight: 600;
+    border: none;
+    color: white;
+    background-color: #106C89;
+    font-size: 30px;
+    border-radius: 15px;
+
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+    margin-right: 13%;
+
+    box-shadow: 5px 5px 1px #B4D5DF;
+}
+
+.my-email,
+.my-insta{
+    font-size: 80px;
+    flex: 1;
+    font-weight: 700;
+    letter-spacing: 10px;
+    color: #03303d;
+    text-decoration: none;
+
+    transition: opacity .2s;
+}
+
+.my-email:hover,
+.my-insta:hover{
+    opacity: 70%;
+}
+
+.insta-container{
+    /* background-color: blue; */
+
+  display: flex;
+  flex-direction: row;
+  /* margin-right: 20%;
+  margin-top: 10%; */
+  align-items: center;
+  justify-content: left;
+}
+
+
+.insta-icon1{
+    margin-right: 38%;
+}
+
+.insta-icon2{
+    display: inline-block;
+    margin-left: -49%;
+    margin-top: 10px;
+    z-index: -1;
+}
+
+.my-insta{
+    margin-left: 29%;
+}
+
+@media (max-width: 1315px){
+    .my-insta{
+        margin-left: 15%;
+    }
+
+    .email-icon{
+        margin-right: 5%;
+    }
+}
+
+@media (max-width: 1130px){
+   .my-email,
+   .my-insta{
+    font-size: 40px;
+    letter-spacing: 1px;
+   }
+
+   .insta-icon2{
+    margin-left: -57%;
+   }
+}
+
+@media (max-width: 560px){
+    .my-email,
+    .my-insta{
+        font-size: 25px;
+    }
+
+    .insta-icon2{
+        margin-left: -62%;
+    }
+}
+

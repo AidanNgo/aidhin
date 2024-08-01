@@ -1,34 +1,13 @@
-.portfolio{
+.portfolio,
+.small-portfolio{
     font-family: Rubik Glitch Pop;
     color: black;
+}
+.portfolio{
     margin-left: -10px;
-
 }
-
-html, body{
-    height: 100%;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-}
-
-.top-grid-section{
-    display: grid;
-    grid-template-columns: 1fr;
-}
-
-.title-container{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-.title-text{
-    margin-top: 80px;
-    margin-left: 25px;
-    font-family: Khula;
-    font-size: 60px;
-    font-weight: 600;
+.small-portfolio{
+    margin-right: -4px;
 }
 
 .solid-line1{
@@ -53,8 +32,432 @@ html, body{
     margin-right: 25px;
 }
 
+/*below are styles for the photo gallery grid*/
+.photo-gallery-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding-left: 100px;
+    padding-right: 100px;
+    gap: 10px;
+
+}
+
+.photo-gallery-grid img{
+    width: 100%;
+    object-fit: cover;
+    display: block;
+    cursor: pointer;
+}
+
+.wide{
+    grid-column: span 2;
+}
 
 
+#img38{
+    margin-top: -10.3%;
+}
+#img13,
+#img14,
+#img18{
+    margin-top: -15%;
+}
+#img24,
+#img36,
+#img40,
+#img44,
+#img48,
+#img52{
+    margin-top: -78.3%;
+}
+#img5,
+#img7,
+#img9,
+#img12,
+#img16,
+#img20
+{
+    margin-top: -83.5%;
+}
+#img25,
+#img26,
+#img29,
+#img30,
+#img33,
+#img34,
+#img37,
+#img42,
+#img46,
+#img50{
+    margin-top: -93.6%;
+}
+#img17,
+#img22{
+    margin-top: -98.6%;
+}
+#img28,
+#img32{
+    margin-top: -161%;
+}
+#img41,
+#img45,
+#img49{
+    margin-top: -177.2%;
+}
+#img21{
+    margin-top: -182%;
+}
+
+/*lightbox styles below*/
+.lightbox{
+    width: 100%;
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.97);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 200;
+    /* display: none; */
+    /* animation: fadeIn 0.2s ease-in; */
+
+    /* transition: opacity .15s; */
+
+    opacity: 0;
+    transition: opacity 0.2s;
+    visibility: hidden;
+}
+
+.lightbox.show{
+    opacity: 1;
+    visibility: visible;
+}
+
+.lightbox.hide{
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s, visibility 0s 0.2s;
+}
+
+.lightbox img{
+    max-width: 95%;
+    max-height: 95%;
+}
+
+.close-button,
+.prev-button,
+.next-button{
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.close-button{
+    position: absolute;
+    top: 4%;
+    right: 3%;
+    font-size: 23px;
+    font-weight: 700;
+    color: black;
+    cursor: pointer;
+    font-family: Inter;
+}
+
+.close-button:hover{
+    text-decoration: underline;
+}
+
+.prev-button,
+.next-button{
+    position: absolute;
+    font-size: 35px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.prev-button{
+    left: 5%;
+}
+
+.next-button{
+    right: 5%;
+}
+
+.prev-button:hover,
+.next-button:hover{
+    text-decoration: underline;
+}
+
+/*media queries below*/
+@media (max-width: 1620px){
+    .photo-gallery-grid{
+        grid-template-columns: 1fr 1fr 1fr;
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+    #img1,
+    #img2,
+    #img3,
+    #img4,
+    #img5,
+    #img6,
+    #img7,
+    #img8,
+    #img9,
+    #img10,
+    #img11,
+    #img12,
+    #img13,
+    #img14,
+    #img15,
+    #img16,
+    #img17,
+    #img18,
+    #img19,
+    #img20,
+    #img21,
+    #img22,
+    #img23,
+    #img24,
+    #img25,
+    #img26,
+    #img27,
+    #img28,
+    #img29,
+    #img30,
+    #img31,
+    #img32,
+    #img33,
+    #img34,
+    #img35,
+    #img36,
+    #img37,
+    #img39,
+    #img40,
+    #img41,
+    #img42,
+    #img43,
+    #img44,
+    #img45,
+    #img46,
+    #img47,
+    #img48,
+    #img49,
+    #img50,
+    #img51,
+    #img52
+    {
+        margin-top: 0;
+    }
+    .wide{
+        grid-column: span 1;
+    }
+    
+    #img4,
+    #img6,
+    #img9,
+    #img11,
+    #img12,
+    #img16,
+    #img23,
+    #img36,
+    #img39{
+        margin-top: -83.5%;
+    }
+    #img26,
+    #img29,
+    #img32,
+    #img35{
+        margin-top: -87.9%;
+    }
+    #img38,
+    #img41,
+    #img44,
+    #img47,
+    #img50{
+        margin-top: -171%;
+    }
+    #img51image{
+        margin-left: -102.1%;
+        margin-top: -19%;
+    }
+    #img52image{
+        margin-left: 204.2%;
+        margin-top: -152%;
+    }
+}
+
+@media (max-width: 1275px) {
+    .photo-gallery-grid{
+        grid-template-columns: 1fr 1fr;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    #img1,
+    #img2,
+    #img3,
+    #img4,
+    #img5,
+    #img6,
+    #img7,
+    #img8,
+    #img9,
+    #img10,
+    #img11,
+    #img12,
+    #img13,
+    #img14,
+    #img15,
+    #img16,
+    #img17,
+    #img18,
+    #img19,
+    #img20,
+    #img21,
+    #img22,
+    #img23,
+    #img24,
+    #img25,
+    #img26,
+    #img27,
+    #img28,
+    #img29,
+    #img30,
+    #img31,
+    #img32,
+    #img33,
+    #img34,
+    #img35,
+    #img36,
+    #img37,
+    #img38,
+    #img39,
+    #img40,
+    #img41,
+    #img42,
+    #img43,
+    #img44,
+    #img45,
+    #img46,
+    #img47,
+    #img48,
+    #img49,
+    #img50,
+    #img51,
+    #img52
+    {
+        margin-top: 0;
+    }
+    #img51image,
+    #img52image{
+        margin-top: 0;
+        margin-left: 0;
+    }
+
+    #img35{
+        margin-top: -4.1%;
+    }
+    #img26,
+    #img28,
+    #img30,
+    #img32,
+    #img34{
+        margin-top: -79%;
+    }
+    #img3,
+    #img9,
+    #img15,
+    #img17,
+    #img19,
+    #img24{
+        margin-top: -83.5%;
+    }
+    #img37,
+    #img39,
+    #img41,
+    #img43,
+    #img45,
+    #img47,
+    #img49,
+    #img51{
+        margin-top: -87%;
+    }
+    #img5,
+    #img7{
+        margin-top: -167.1%;
+    }
+}
+
+@media (max-width: 870px) {
+    .photo-gallery-grid{
+        grid-template-columns: 1fr;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    #img1,
+    #img2,
+    #img3,
+    #img4,
+    #img5,
+    #img6,
+    #img7,
+    #img8,
+    #img9,
+    #img10,
+    #img11,
+    #img12,
+    #img13,
+    #img14,
+    #img15,
+    #img16,
+    #img17,
+    #img18,
+    #img19,
+    #img20,
+    #img21,
+    #img22,
+    #img23,
+    #img24,
+    #img25,
+    #img26,
+    #img27,
+    #img28,
+    #img29,
+    #img30,
+    #img31,
+    #img32,
+    #img33,
+    #img34,
+    #img35,
+    #img36,
+    #img37,
+    #img38,
+    #img39,
+    #img40,
+    #img41,
+    #img42,
+    #img43,
+    #img44,
+    #img45,
+    #img46,
+    #img47,
+    #img48,
+    #img49,
+    #img50,
+    #img51,
+    #img52
+    {
+        margin-top: 0;
+    }
+    #img51image,
+    #img52image{
+        margin-top: 0;
+        margin-left: 0;
+    }
+}
 
 
 

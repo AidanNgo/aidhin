@@ -23,9 +23,11 @@
     <body>
 
         <div class="header">
-            <div class="my-name">
-                AID.HIN
-            </div>
+            <a href="../home.html" class="my-name">
+                <div>
+                    AID.HIN
+                </div>
+            </a>
             <div class="pages-row">
 				<a href="../home.html" class="home">
 					home
@@ -42,6 +44,7 @@
 				<a href="../price.html" class="price">
                     price
 				</a>
+                <img class="menu-icon" src="../icons/menu.svg" onclick="openMenu()">
             </div>
         </div>
 
@@ -54,18 +57,40 @@
                 <div class="image2-background"></div>
                 <div class="text2">portraits + people</div>
             </a>
-            <a class="video-container hidden">
-                <div class="video-background"></div>
+            <a class="video-container hidden" href="https://www.youtube.com/@aid_hin/videos" target="_blank">
+                <div class="video-background">
+                    <video id="background-video" autoplay muted loop>
+                        <source src="short-clip-1080p.mp4" type="video/mp4">
+                    </video>
+                </div>
                 <div class="text3">videos</div>
             </a>
-
         </div>
 
-        <!-- <script>
+        <div class="overall-small-menu">
+            <div class="close-menu-button" onclick="closeSmallMenu()">X</div>
+            <div class="small-menu-pages-container">
+                <a class="small-home" href="../home.html">home</a>
+                <a class="small-about" href="../about.html">about</a>
+                <a class="small-portfolio" href="portfolio.html">portfolio</a>
+                <a class="small-contact" href="../contact.html">contact</a>
+                <a class="small-price" href="../price.html">price</a>
+                <div class="bottom-icons">
+                    <a href="https://www.instagram.com/aid.hin/" class="instagram-button" target="_blank">
+                        <img src="../icons/Instagram.svg" class="instagram-icon">
+                    </a>
+                    <a href="https://www.youtube.com/@aid_hin/videos" class="youtube-button" target="_blank">
+                        <img src="../icons/YouTube.svg" class="youtube-icon">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <script>
             document.addEventListener('contextmenu', function(event) {
                 event.preventDefault();
             });
-        </script> -->
-
+        </script>
+        <script src="../header.js" defer></script>
     </body>
 </html>

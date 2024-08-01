@@ -1,7 +1,13 @@
-.portfolio{
+.portfolio,
+.small-portfolio{
     font-family: Rubik Glitch Pop;
     color: black;
+}
+.portfolio{
     margin-left: -10px;
+}
+.small-portfolio{
+    margin-right: -4px;
 }
 
 html, body{

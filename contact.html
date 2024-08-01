@@ -14,16 +14,18 @@
         <link href="https://fonts.googleapis.com/css2?family=Khula:wght@300;400;700&display=swap" rel="stylesheet">
 
         <link rel="stylesheet" href="general-styles/header.css">
-        <link rel="stylesheet" href="contact-styles/contact.css">
+        <link rel="stylesheet" href="contact.css">
 
     </head>
 
     <body>
         
         <div class="header">
-            <div class="my-name">
-                AID.HIN
-            </div>
+            <a href="home.html" class="my-name">
+                <div>
+                    AID.HIN
+                </div>
+            </a>
             <div class="pages-row">
 				<a href="home.html" class="home">
 					home
@@ -40,6 +42,7 @@
 				<a href="price.html" class="price">
                     price
 				</a>
+                <img class="menu-icon" src="icons/menu.svg" onclick="openMenu()">
             </div>
         </div>
 
@@ -49,22 +52,40 @@
                     <button class="email-icon">
                         Email
                     </button>
-                    <div class="my-email">
+                    <a href="mailto:aidhin@gmail.com" class="my-email">
                         aidhin@gmail.com
-                    </div>
+                    </a>
                 </div>
     
                 <div class="insta-container">
                     <img src="icons/instagram2.svg" class="insta-icon1">
                     <img src="icons/instagram3.svg" class="insta-icon2">
-                    <div class="my-insta">
+                    <a href="https://www.instagram.com/aid.hin/" class="my-insta">
                         @aid.hin
-                    </div>
+                    </a>
                 </div>
             </div>
         </div>
         
+        <div class="overall-small-menu">
+            <div class="close-menu-button" onclick="closeSmallMenu()">X</div>
+            <div class="small-menu-pages-container">
+                <a class="small-home" href="home.html">home</a>
+                <a class="small-about" href="about.html">about</a>
+                <a class="small-portfolio" href="all-portfolio-related-pages/portfolio.html">portfolio</a>
+                <a class="small-contact" href="contact.html">contact</a>
+                <a class="small-price" href="price.html">price</a>
+                <div class="bottom-icons">
+                    <a href="https://www.instagram.com/aid.hin/" class="instagram-button" target="_blank">
+                        <img src="icons/Instagram.svg" class="instagram-icon">
+                    </a>
+                    <a href="https://www.youtube.com/@aid_hin/videos" class="youtube-button" target="_blank">
+                        <img src="icons/YouTube.svg" class="youtube-icon">
+                    </a>
+                </div>
+            </div>
+        </div>
 
-
+        <script src="header.js" defer></script>
     </body>
 </html>

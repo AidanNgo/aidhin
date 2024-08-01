@@ -14,16 +14,18 @@
         <link href="https://fonts.googleapis.com/css2?family=Khula:wght@300;400;700&display=swap" rel="stylesheet">
 
         <link rel="stylesheet" href="general-styles/header.css">
-        <link rel="stylesheet" href="about-styles/about.css">
+        <link rel="stylesheet" href="about.css">
 
     </head>
 
     <body>
 
         <div class="header">
-            <div class="my-name">
-                AID.HIN
-            </div>
+            <a href="home.html" class="my-name">
+                <div>
+                    AID.HIN
+                </div>
+            </a>
             <div class="pages-row">
 				<a href="home.html" class="home">
 					home
@@ -40,13 +42,14 @@
 				<a href="price.html" class="price">
                     price
 				</a>
+                <img class="menu-icon" src="icons/menu.svg" onclick="openMenu()">
             </div>
         </div>
 
         <div class="main-flex-container"> <!--a flex box-->
             <div class="main-grid-container"> <!--a grid-->
                 <div class="me-picture-container">
-                    <img src="photographs/general-pics/IMG_7622 (2).jpg" class="me-picture">
+                    <img src="photographs/IMG_7622 (2).jpg" class="me-picture">
                     <div class="me-picture-caption">
                         (unironically, i do not have a proper professional pic of myself. you got me?)
                     </div>
@@ -74,7 +77,7 @@
                             You can find all of my latest works on 
                             <a href="https://www.instagram.com/aid.hin/" class="links" target="_blank">Instagram</a> 
                             and 
-                            <a href="http://www.youtube.com/@aid_hin" class="links" target="_blank">YouTube</a>.
+                            <a href="https://www.youtube.com/@aid_hin/videos" class="links" target="_blank">YouTube</a>.
                         </p>
                         <p>
                             THANK YOU SO MUCH for taking the time to check out my work and website. I hope to see you soon :)
@@ -84,6 +87,25 @@
             </div>
         </div>
        
+        <div class="overall-small-menu">
+            <div class="close-menu-button" onclick="closeSmallMenu()">X</div>
+            <div class="small-menu-pages-container">
+                <a class="small-home" href="home.html">home</a>
+                <a class="small-about" href="about.html">about</a>
+                <a class="small-portfolio" href="all-portfolio-related-pages/portfolio.html">portfolio</a>
+                <a class="small-contact" href="contact.html">contact</a>
+                <a class="small-price" href="price.html">price</a>
+                <div class="bottom-icons">
+                    <a href="https://www.instagram.com/aid.hin/" class="instagram-button" target="_blank">
+                        <img src="icons/Instagram.svg" class="instagram-icon">
+                    </a>
+                    <a href="https://www.youtube.com/@aid_hin/videos" class="youtube-button" target="_blank">
+                        <img src="icons/YouTube.svg" class="youtube-icon">
+                    </a>
+                </div>
+            </div>
+        </div>
 
+        <script src="header.js" defer></script>
     </body>
 </html>

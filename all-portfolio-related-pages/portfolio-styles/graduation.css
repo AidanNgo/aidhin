@@ -1,17 +1,35 @@
-@keyframes fadeIn{
-    from{
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-.portfolio{
+.portfolio,
+.small-portfolio{
     font-family: Rubik Glitch Pop;
     color: black;
+}
+.portfolio{
     margin-left: -10px;
+}
+.small-portfolio{
+    margin-right: -4px;
+}
 
+.solid-line1{
+    border: none;
+    border-top: 1px solid black;
+    flex-grow: 1;
+    margin-left: 30px;
+    margin-top: 75px;
+    flex: 0.95;
+}
+
+.solid-line2{
+    display: none;
+
+    border: none;
+    border-top: 1px solid black;
+    flex-grow: 1;
+    margin: 0;
+    padding: 0;
+    margin-left: 25px;
+    margin-bottom: 20px;
+    margin-right: 25px;
 }
 
 /*below are styles for the photo gallery grid*/
@@ -67,8 +85,25 @@
     align-items: center;
     justify-content: center;
     z-index: 200;
-    display: none;
-    animation: fadeIn 0.2s ease-in;
+    /* display: none; */
+    /* animation: fadeIn 0.2s ease-in; */
+
+    /* transition: opacity .15s; */
+
+    opacity: 0;
+    transition: opacity 0.2s;
+    visibility: hidden;
+}
+
+.lightbox.show{
+    opacity: 1;
+    visibility: visible;
+}
+
+.lightbox.hide{
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s, visibility 0s 0.2s;
 }
 
 .lightbox img{

@@ -7,7 +7,10 @@ var imageIndex = 0;
 
 function closeLightbox(){
     lightboxOn = 0;
-    lightbox.style.display = "none";
+    lightbox.classList.remove('show');
+    lightbox.classList.add('hide');
+    // lightbox.style.display = "none";
+    document.body.style.overflow = "auto";
 }
 
 function plusImages(n){
@@ -15,9 +18,12 @@ function plusImages(n){
 }
 
 function openImage(n){
+    document.body.style.overflow = "hidden"; /*disables scroll */
     imageIndex = n;
     if (lightboxOn == 0){
-        lightbox.style.display = "flex";
+        // lightbox.style.display = "flex";
+        lightbox.classList.remove('hide');
+        lightbox.classList.add('show');
         lightboxOn = 1;
     }
     if (n >= allImages.length){
