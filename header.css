@@ -1,0 +1,225 @@
+
+.header{
+    background-color: #106C89;
+    height: 75px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 200;
+}
+
+
+.my-name{
+    font-family: Inter;
+    color: white;
+    font-size: 35px;
+    font-weight: 700;
+    letter-spacing: 7px;
+    margin-left: 25px;
+    text-decoration: none;
+
+    text-shadow: 0 0 5px whitesmoke,
+    0 0 20px whitesmoke,
+    0 0 70px whitesmoke;
+}
+
+.pages-row{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 415px;
+    margin-right: 27px;
+}
+
+.about-me,
+.home,
+.portfolio,
+.contact,
+.price{
+    /* border-style: solid;
+    border-color: black;
+    border-width: 1px; */
+
+    font-family: Inter;
+    font-weight: 300;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    width: 70px;
+}
+
+.about-me{
+    margin-left: -15px;
+}
+
+.portfolio{
+    margin-left: -6px;
+}
+
+.price{
+    margin-left: -15px;
+}
+
+.home:hover,
+.about-me:hover,
+.portfolio:hover,
+.contact:hover,
+.price:hover{
+    color: black;
+    font-family: Rubik Glitch Pop;
+
+}
+
+
+
+/*styles for the small menu*/
+.menu-icon{
+    height: 22px;
+    display: none;
+    cursor: pointer;
+    transition: opacity .2s;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.menu-icon:hover{
+    opacity: 60%;
+}
+
+.overall-small-menu{
+    width: 100%;
+    height: 100vh;
+    background: #106C89;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 220;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    /* display: none;*/
+    opacity: 0;
+    transition: opacity 0.2s;
+    visibility: hidden;
+}
+
+.overall-small-menu.show{
+    opacity: 1;
+    visibility: visible;
+}
+
+.overall-small-menu.hide{
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s, visibility 0s 0.2s;
+}
+
+.overall-small-menu div{
+    color: white;
+    font-family: Inter;
+}
+
+.close-menu-button{
+    position: absolute;
+    top: 4%;
+    right: 6%;
+    font-size: 25px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: opacity .15s;
+}
+
+.close-menu-button:hover{
+    opacity: 65%;
+}
+
+.small-menu-pages-container{
+    /* background-color: red; */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 320px;
+    width: 1px;
+    margin-bottom: 5%;
+}
+
+.small-home,
+.small-about,
+.small-portfolio,
+.small-contact,
+.small-price{
+
+    text-decoration: none;
+    color: white;
+    font-size: 27px;
+    height: 1px;
+    text-align: center;
+
+}
+
+.small-home:hover,
+.small-about:hover,
+.small-portfolio:hover,
+.small-contact:hover,
+.small-price:hover{
+    font-family: Rubik Glitch Pop;
+    color: black;
+}
+
+.bottom-icons{
+    /* background-color: red; */
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-top: 60px;
+    width: 70px;
+}
+.bottom-icons a{
+    text-decoration: none;
+}
+.youtube-icon{
+    height: 25px;
+}
+.instagram-icon{
+    height: 30px;
+}
+.youtube-icon:hover,
+.instagram-icon:hover{
+    opacity: 70%;
+}
+
+
+/*media queries below*/
+@media (max-width: 660px){
+    .home,
+    .about-me,
+    .portfolio,
+    .contact,
+    .price{
+        display: none;
+    }
+    .pages-row{
+        justify-content: end;
+    }
+    .menu-icon{
+        display: block;
+    }
+}
