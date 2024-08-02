@@ -243,6 +243,22 @@
 
 
 /*media queries below*/
+@media (max-width: 590px){
+    .solid-line1{
+        display: none;
+    }
+
+    .solid-line2{
+        display: block;
+    }
+
+    .title-text{
+        font-size: 43px !important;
+        margin-left: 15px !important;
+        /* white-space: nowrap; */
+    }
+}
+
 @media (max-width: 1620px){
     .grid-item img{
         margin-top: 0;
@@ -462,19 +478,4 @@
     }
 }
 
-@media (max-width: 590px){
-    .solid-line1{
-        display: none;
-    }
-
-    .solid-line2{
-        display: block;
-    }
-
-    .title-text{
-        font-size: 43px;
-        margin-left: 15px;
-        /* white-space: nowrap; */
-    }
-}
 

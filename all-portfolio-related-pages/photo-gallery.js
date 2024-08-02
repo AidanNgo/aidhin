@@ -57,6 +57,6 @@ const hiddenElements = document.querySelectorAll('.hidden');
 hiddenElements.forEach((el) => observer.observe(el)); 
 
 // diables right click on the entire html page
-document.addEventListener('contextmenu', function(event) {
-    event.preventDefault();
-});
+// document.addEventListener('contextmenu', function(event) {
+//     event.preventDefault();
+// });
