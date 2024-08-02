@@ -15,6 +15,11 @@ html, body{
     width: 100%;
     margin: 0;
     padding: 0;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .main-content{
@@ -82,8 +87,6 @@ html, body{
     left: 4%;
     color: white;
 }
-
-
 
 .video-background{
     position: absolute;

@@ -15,6 +15,11 @@ html, body{
     width: 100%;
     margin: 0;
     padding: 0;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .top-grid-section{
@@ -58,19 +63,30 @@ html, body{
     margin-right: 25px;
 }
 
+.flex-for-genre-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    margin-top: -10px;
+
+    /* background-color: black; */
+}
+
 .genre-container{
     /* background-color: black; */
 
-    margin-top: 15px;
+    /* margin-top: 15px; */
     display: grid;
 
-    grid-template-columns: 0.34fr 0.34fr;
-    column-gap: 100px;
+    grid-template-columns: 1fr 1fr;
     justify-content: center;
 
     column-gap: 15%;
 
     font-family: Roboto Mono;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 .left-container{
@@ -105,7 +121,7 @@ html, body{
 
 .left-image,
 .right-image{
-    width: 100%;
+    width: 87.5%;
     box-shadow: -16px -15px 0px #106C89;
 
     transition: opacity .4s, box-shadow .3s;
@@ -134,16 +150,30 @@ html, body{
 
 @media (max-width: 1320px){
     .genre-container{
-        margin-top: 7%;
+        padding-left: 0%;
+        padding-right: 0%;
     }
 }
 
 @media (max-width: 1020px){
+    .flex-for-genre-container{
+        margin: 0;
+        padding: 0;
+        position: relative;
+    }
     .genre-container{
-        margin-top: 4%;
-        grid-template-columns: 0.48fr;
+        position: absolute;
+        top: 15px;
+
+        grid-template-columns: 1fr;
         column-gap: 0px;
         row-gap: 50px;
+        padding: 0;
+        padding-bottom: 3%;
+    }
+    .left-image,
+    .right-image{
+        width: 45%;
     }
 
     .left-container{
@@ -157,7 +187,6 @@ html, body{
 
 @media (max-width: 590px){
 
-
     .solid-line1{
         display: none;
     }
@@ -167,7 +196,7 @@ html, body{
     }
 
     .title-text{
-        font-size: 55px;
+        font-size: 42px;
         margin-left: 15px;
         /* white-space: nowrap; */
     }
@@ -176,4 +205,12 @@ html, body{
     .right-text{
         font-size: 20px;
     }
+}
+
+@media(max-width:445px){
+    .genre-container{
+        top: 5%;
+        margin-left: -24px;
+    }
+    
 }

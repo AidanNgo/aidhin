@@ -362,6 +362,7 @@
         grid-template-columns: 1fr 1fr;
         padding-left: 50px;
         padding-right: 50px;
+        padding-bottom: 30px;
     }
     .photo-gallery-grid .grid-item .img63-up
     {
@@ -457,6 +458,7 @@
         grid-template-columns: 1fr;
         padding-left: 50px;
         padding-right: 50px;
+        padding-bottom: 30px;
     }
 }
 
@@ -470,7 +472,7 @@
     }
 
     .title-text{
-        font-size: 55px;
+        font-size: 43px;
         margin-left: 15px;
         /* white-space: nowrap; */
     }
