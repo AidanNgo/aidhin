@@ -1,14 +1,7 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-
 html, body{
     height: 100%;
-
-    /* border-style: solid;
-    border-color: white;
-    border-width: 1px; */
+    margin: 0;
+    padding: 0;
 }
 
 body div{
@@ -119,7 +112,8 @@ body div{
   z-index: -1;
 }
 
-#background-images img{
+#background-images img,
+#background-images link{
     position: fixed;
     top: 0;
     left: 0;
