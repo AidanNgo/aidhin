@@ -64,40 +64,34 @@ html, body{
 }
 
 .flex-for-genre-container{
+    /* background-color: black; */
+
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 80vh;
-    margin-top: -10px;
-
-    /* background-color: black; */
+    height: calc(100vh - 200px);
+    margin: 0;
+    padding: 0;
+    padding-top: 5px;
 }
 
 .genre-container{
-    /* background-color: black; */
 
-    /* margin-top: 15px; */
     display: grid;
-
     grid-template-columns: 1fr 1fr;
     justify-content: center;
-
-    column-gap: 15%;
-
+    column-gap: 12%;
     font-family: Roboto Mono;
     padding-left: 10%;
     padding-right: 10%;
+    height: 100%;
 }
 
 .left-container{
-    /* background-color: blue; */
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
     margin-left: 17%;
-
-    text-decoration: none;
+}
+.right-container{
+    margin-right: 17%;
 }
 
 .left-container:hover .left-image,
@@ -107,45 +101,28 @@ html, body{
 
 }
 
-.left-text{
-    /* background-color: blue; */
-
-    margin-right: 20px;
-    font-size: 33px;
-    font-weight: 500;
-    writing-mode: vertical-lr;
-    transform: scaleX(-1) scaleY(-1);
-    letter-spacing: 2px;
+.left-text,
+.right-text{
+    font-size: 27px;
+    font-weight: 600;
     color: black;
 }
 
 .left-image,
 .right-image{
-    width: 83%;
+    width: 82%;
     box-shadow: -16px -15px 0px #106C89;
 
     transition: opacity .4s, box-shadow .3s;
 }
 
+.left-container,
 .right-container{
-    /* background-color: red; */
-
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-right: 17%;
-
     text-decoration: none;
-}
-
-.right-text{
-
-    margin-right: 24px;
-    font-size: 30px;
-    font-weight: 500;
-    writing-mode: vertical-lr;
-    transform: scaleX(-1) scaleY(-1);
-    color: black;
 }
 
 @media (max-width: 1320px){
@@ -167,13 +144,13 @@ html, body{
 
         grid-template-columns: 1fr;
         column-gap: 0px;
-        row-gap: 50px;
+        row-gap: 80px;
         padding: 0;
         padding-bottom: 3%;
     }
     .left-image,
     .right-image{
-        width: 45%;
+        width: 51%;
     }
 
     .left-container{
@@ -205,12 +182,21 @@ html, body{
     .right-text{
         font-size: 20px;
     }
+    .left-image,
+    .right-image{
+        width: 70%;
+    }
 }
 
 @media(max-width:445px){
-    .genre-container{
-        top: 5%;
-        margin-left: -24px;
+    .left-image,
+    .right-image{
+        width: 74%;
     }
-    
+
+    .left-text,
+    .right-text{
+        font-size: 18px;
+        letter-spacing: 0px;
+    }
 }
