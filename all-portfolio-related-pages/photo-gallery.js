@@ -57,6 +57,37 @@ const hiddenElements = document.querySelectorAll('.hidden');
 hiddenElements.forEach((el) => observer.observe(el)); 
 
 // diables right click on the entire html page
-document.addEventListener('contextmenu', function(event) {
+// document.addEventListener('contextmenu', function(event) {
+//     event.preventDefault();
+// });
+
+
+/* EXPERIMENTAL CODE:*/
+// Prevent context menu on long-press or right-click
+document.addEventListener('contextmenu', function (event) {
     event.preventDefault();
-});
+  });
+  
+  // Prevent text selection on long-press
+  document.addEventListener('selectstart', function (event) {
+    event.preventDefault();
+  });
+  
+  // Optionally, prevent touch and hold actions
+  document.addEventListener('touchstart', function (event) {
+    if (event.touches.length > 1) {
+      event.preventDefault();
+    }
+  }, { passive: false });
+  
+  document.addEventListener('touchend', function (event) {
+    if (event.touches.length > 1) {
+      event.preventDefault();
+    }
+  }, { passive: false });
+  
+  document.addEventListener('touchmove', function (event) {
+    if (event.touches.length > 1) {
+      event.preventDefault();
+    }
+  }, { passive: false });
