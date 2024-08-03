@@ -121,7 +121,7 @@ html, body{
 
 .left-image,
 .right-image{
-    width: 86%;
+    width: 83%;
     box-shadow: -16px -15px 0px #106C89;
 
     transition: opacity .4s, box-shadow .3s;
