@@ -164,6 +164,7 @@ body div{
     .big-name{
         font-size: 45px;
         letter-spacing: 30px;
+        margin-right: 12px;
     }
     .pages-row a{
         font-size: 12.5px;
@@ -177,6 +178,7 @@ body div{
     .big-name{
         font-size: 38px;
         letter-spacing: 27px;
+        margin-right: 17px;
     }
     .pages-row{
         gap: 33px;
