@@ -14,3 +14,4 @@ function closeSmallMenu(){
     smallMenu.classList.add('hide');
     document.body.style.overflow = "auto";
 }
+

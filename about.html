@@ -20,7 +20,8 @@
 
         <link rel="stylesheet" href="header.css">
         <link rel="stylesheet" href="about.css">
-
+        
+        <script src="about.js" defer></script>
     </head>
 
     <body>
@@ -118,21 +119,6 @@
             </div>
         </div>
 
-        <script>
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach((entry) => {
-                    console.log(entry)
-                    if(entry.isIntersecting){
-                        entry.target.classList.add('show');
-                    } else{
-                        entry.target.classList.remove('show');
-                    }
-                });
-            });
-
-            const hiddenElements = document.querySelectorAll('.hidden');
-            hiddenElements.forEach((el) => observer.observe(el)); 
-        </script>
         <script src="header.js" defer></script>
 
     </body>
