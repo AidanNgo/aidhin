@@ -244,6 +244,22 @@
 }
 
 @media (max-width: 1275px) {
+    .close-button{
+        top: 3%;
+    }
+    .prev-button,
+    .next-button{
+        background-color: white;
+        padding-left: 6px;
+        padding-right: 6px;
+        border-radius: 6px;
+        transition: opacity .15s;
+    }
+    .prev-button:hover,
+    .next-button:hover{
+        text-decoration: none;
+        opacity: 70%;
+    }
     .photo-gallery-grid{
         grid-template-columns: 1fr 1fr;
         padding-left: 50px;
@@ -315,6 +331,10 @@
 }
 
 @media (max-width: 870px) {
+    .prev-button,
+    .next-button{
+        font-size: 23px;
+    }
     .photo-gallery-grid{
         grid-template-columns: 1fr;
         padding-left: 50px;
