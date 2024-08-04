@@ -172,3 +172,13 @@ body div{
         gap: 42px;
     }
 }
+
+@media (max-width: 420px) {
+    .big-name{
+        font-size: 38px;
+        letter-spacing: 27px;
+    }
+    .pages-row{
+        gap: 33px;
+    }
+}
