@@ -23,6 +23,21 @@
         <link rel="stylesheet" href="../header.css">
         <link rel="stylesheet" href="portfolio-styles/people.css">
 
+        <script>
+            // Function to check and set the refresh flag
+            function refreshOnce() {
+                // Check if the 'refreshed' flag is set in session storage
+                if (!sessionStorage.getItem('refreshed')) {
+                    // If not set, reload the page and set the flag
+                    sessionStorage.setItem('refreshed', 'true');
+                    location.reload();
+                }
+            }
+    
+            // Execute the function on page load
+            window.onload = refreshOnce;
+        </script>
+
     </head>
 
     <body>
@@ -96,11 +111,11 @@
             </div>
         </div>
 
-        <!-- <script>
+        <script>
             document.addEventListener('contextmenu', function(event) {
                 event.preventDefault();
             });
-        </script> -->
+        </script>
 
         <script src="../header.js" defer></script>
     </body>
