@@ -79,7 +79,11 @@ html, body{
 .video-container:hover .text3{
     left: 12%;
 }
-
+.text1,
+.text2,
+.text3{
+    transition: left 1s;
+}
 
 .text3{
     position: absolute;
@@ -107,9 +111,28 @@ html, body{
     object-fit: cover;
 }
 
-.text1,
-.text2,
-.text3{
-    transition: left 1s;
+.copyright-container{
+    position: absolute;
+    top: 300%;
+    left: 50%;
 }
 
+.copyright-text{
+    font-family: Khula;
+    font-weight: 400;
+    font-size: 13px;
+    margin-top: 4%;
+    padding-bottom: 10px;
+    color: black;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+
+@media (max-width: 545px){
+    .text1,
+    .text2,
+    .text3{
+        font-size: 25px;
+    }
+}

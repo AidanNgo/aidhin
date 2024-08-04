@@ -108,6 +108,16 @@
     margin-top: -182%;
 }
 
+.copyright-text{
+    font-family: Khula;
+    font-weight: 400;
+    font-size: 13px;
+    margin-top: 4%;
+    padding-bottom: 10px;
+    color: black;
+    text-align: center;
+}
+
 /*lightbox styles below*/
 .lightbox{
     width: 100%;
