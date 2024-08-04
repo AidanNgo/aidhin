@@ -498,3 +498,9 @@
         margin-left: 0;
     }
 }
+
+@media(max-width: 340px){
+    .title-text{
+        font-size: 32px !important;
+    }
+}
