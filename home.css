@@ -6,7 +6,7 @@ html, body{
 
 body div{
     color: white;
-    font-family: Inter;
+    font-family: Inter, Arial;
     z-index: 200;
 }
 

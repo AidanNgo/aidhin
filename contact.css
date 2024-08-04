@@ -3,7 +3,7 @@
 
 .contact,
 .small-contact{
-    font-family: Rubik Glitch Pop;
+    font-family: Rubik Glitch Pop, Arial;
     color: black;
 }
 
@@ -29,7 +29,7 @@ html, body{
 .inner-flex-container{
     /* background-color: blue; */
 
-    font-family: Inter;
+    font-family: Inter, Arial;
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -46,7 +46,7 @@ html, body{
 }
 
 .email-icon{
-    font-family: Inter;
+    font-family: Inter, Arial;
     font-weight: 600;
     border: none;
     color: white;

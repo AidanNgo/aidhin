@@ -1,6 +1,6 @@
 .portfolio,
 .small-portfolio{
-    font-family: Rubik Glitch Pop;
+    font-family: Rubik Glitch Pop, Arial;
     color: black;
 }
 .portfolio{
@@ -163,7 +163,7 @@
     font-weight: 700;
     color: black;
     cursor: pointer;
-    font-family: Inter;
+    font-family: Inter, Arial;
 }
 
 .close-button:hover{

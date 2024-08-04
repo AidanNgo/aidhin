@@ -24,7 +24,7 @@ html, body{
 
 .main-content{
     /*for all the text on this page*/
-    font-family: Roboto Mono;
+    font-family: Roboto Mono, 'Courier New', Courier, monospace;
     font-size: 35px;
     color: white;
     font-weight: 600;

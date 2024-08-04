@@ -1,6 +1,6 @@
 .portfolio,
 .small-portfolio{
-    font-family: Rubik Glitch Pop;
+    font-family: Rubik Glitch Pop, Arial;
     color: black;
 }
 .portfolio{
@@ -36,7 +36,7 @@ html, body{
 .title-text{
     margin-top: 75px;
     margin-left: 25px;
-    font-family: Khula;
+    font-family: Khula, Arial;
     font-size: 60px;
     font-weight: 600;
 }
@@ -81,7 +81,7 @@ html, body{
     grid-template-columns: 1fr 1fr;
     justify-content: center;
     column-gap: 12%;
-    font-family: Roboto Mono;
+    font-family: Roboto Mono, 'Courier New', Courier, monospace;
     padding-left: 10%;
     padding-right: 10%;
     height: 100%;
@@ -110,7 +110,7 @@ html, body{
 
 .left-image,
 .right-image{
-    width: 82%;
+    width: 80%;
     box-shadow: -16px -15px 0px #106C89;
 
     transition: opacity .4s, box-shadow .3s;

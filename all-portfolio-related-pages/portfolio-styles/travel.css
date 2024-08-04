@@ -1,6 +1,6 @@
 .portfolio,
 .small-portfolio{
-    font-family: Rubik Glitch Pop;
+    font-family: Rubik Glitch Pop, Arial;
     color: black;
 }
 .portfolio{
@@ -213,7 +213,7 @@
     font-weight: 700;
     color: black;
     cursor: pointer;
-    font-family: Inter;
+    font-family: Inter, Arial;
 }
 
 .close-button:hover{
@@ -370,6 +370,22 @@
 }
 
 @media (max-width: 1275px) {
+    .close-button{
+        top: 3%;
+    }
+    .prev-button,
+    .next-button{
+        background-color: white;
+        padding-left: 6px;
+        padding-right: 6px;
+        border-radius: 6px;
+        transition: opacity .15s;
+    }
+    .prev-button:hover,
+    .next-button:hover{
+        text-decoration: none;
+        opacity: 70%;
+    }
     .grid-item img {
         margin-top: 0 !important;
         margin-left: 0 !important;
@@ -465,6 +481,11 @@
 }
 
 @media (max-width: 870px){
+    .prev-button,
+    .next-button{
+        font-size: 23px;
+
+    }
     .inner-body-container .photo-gallery-grid .grid-item img {
         margin-top: 0 !important;
         margin-left: 0 !important;
