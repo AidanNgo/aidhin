@@ -51,7 +51,7 @@
             </div>
         </div>
 
-        <div class="main-flex-container"> <!--a flex box-->
+        <div class="main-flex-container hidden"> <!--a flex box-->
             <div class="main-grid-container"> <!--a grid-->
                 <div class="me-picture-container">
                     <img src="general-photographs/IMG_7622 (2).jpg" class="me-picture">
@@ -118,6 +118,22 @@
             </div>
         </div>
 
+        <script>
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    console.log(entry)
+                    if(entry.isIntersecting){
+                        entry.target.classList.add('show');
+                    } else{
+                        entry.target.classList.remove('show');
+                    }
+                });
+            });
+
+            const hiddenElements = document.querySelectorAll('.hidden');
+            hiddenElements.forEach((el) => observer.observe(el)); 
+        </script>
         <script src="header.js" defer></script>
+
     </body>
 </html>
