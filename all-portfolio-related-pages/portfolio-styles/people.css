@@ -22,6 +22,7 @@ html, body{
     user-select: none;
 }
 
+
 .top-grid-section{
     display: grid;
     grid-template-columns: 1fr;
@@ -76,7 +77,7 @@ html, body{
 }
 
 .genre-container{
-    /* background-color: black; */
+    /* background-color: blanchedalmond; */
 
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -86,7 +87,7 @@ html, body{
     padding-left: 10%;
     padding-right: 10%;
     height: 100%;
-    margin-left: 10px;
+    margin-left: 25px; /* this is to make the covers look centered*/
 }
 
 .left-container{
@@ -112,7 +113,7 @@ html, body{
 
 .left-image,
 .right-image{
-    width: 80%;
+    width: 81%;
     box-shadow: -16px -15px 0px #106C89;
 
     transition: opacity .4s, box-shadow .3s;
@@ -127,7 +128,7 @@ html, body{
     text-decoration: none;
 }
 
-.copyright-text{
+.copyright-text1{
     font-family: Khula;
     font-weight: 400;
     font-size: 13px;
@@ -135,6 +136,9 @@ html, body{
     padding-bottom: 10px;
     color: black;
     text-align: center;
+}
+.copyright-container2{
+    display: none;
 }
 
 @media (max-width: 1320px){
@@ -149,6 +153,7 @@ html, body{
         margin: 0;
         padding: 0;
         position: relative;
+        height: auto;
     }
     .genre-container{
         position: absolute;
@@ -158,9 +163,24 @@ html, body{
         column-gap: 0px;
         row-gap: 80px;
         padding: 0;
-        padding-bottom: 3%;
         margin-left: 0;
+        height: auto;
     }
+    .copyright-container1{
+        display: none;
+    }
+    .copyright-container2{
+        display: flex;
+        font-family: Khula;
+        font-weight: 400;
+        font-size: 13px;
+        padding-bottom: 10px;
+        color: black;
+        margin-top: -8%;
+        justify-content: center;
+        text-align: center;
+    }
+   
     .left-image,
     .right-image{
         width: 51%;
@@ -174,6 +194,7 @@ html, body{
         margin-right: 0;
         padding-bottom: 11%;
     }
+
 }
 
 @media (max-width: 590px){
