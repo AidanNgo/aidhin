@@ -157,7 +157,7 @@ html, body{
     }
     .genre-container{
         position: absolute;
-        top: 15px;
+        top: 36px;
 
         grid-template-columns: 1fr;
         column-gap: 0px;
