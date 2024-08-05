@@ -24,5 +24,6 @@ html, body{
    /* margin-top: 500px; */
    position: absolute;
    bottom: 9px;
-   width: 400px;
+   width: auto;
+   max-width: 400px;
 }

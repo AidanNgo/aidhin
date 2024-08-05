@@ -21,7 +21,23 @@
         <link rel="stylesheet" href="header.css">
         <link rel="stylesheet" href="about.css">
         
-        <script src="about.js" defer></script>
+        <script>
+            document.addEventListener("DOMContentLoaded", () => {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('show');
+                    } else {
+                        entry.target.classList.remove('show');
+                    }
+                });
+            });
+
+            const hiddenElements = document.querySelectorAll('.hidden');
+            hiddenElements.forEach((el) => observer.observe(el)); 
+        });
+        </script>
+
     </head>
 
     <body>

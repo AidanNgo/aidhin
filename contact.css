@@ -73,6 +73,7 @@ html, body{
     color: #03303d;
 
     transition: opacity .2s;
+    text-decoration: none;
 }
 
 .my-email:hover,
@@ -139,4 +140,21 @@ html, body{
         margin-left: -62%;
     }
 }
+
+@media (max-width: 410px){
+    .inner-flex-container{
+        margin-left: -15px;
+    }
+    .insta-icon1,
+    .insta-icon2{
+        height: 50px;
+    }
+    .email-icon{
+        font-size: 20px;
+    }
+    .my-email,
+    .my-insta{
+        font-size: 20px;
+    }
+}   
 

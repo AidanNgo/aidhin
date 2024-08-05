@@ -23,6 +23,21 @@
         <link rel="stylesheet" href="../header.css">
         <link rel="stylesheet" href="portfolio-styles/portfolio.css">
 
+        <script>
+            document.addEventListener("DOMContentLoaded", () => {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('show');
+                    }
+                });
+            });
+
+            const hiddenElements = document.querySelectorAll('.hidden');
+            hiddenElements.forEach((el) => observer.observe(el)); 
+        });
+        </script>
+
     </head>
 
     <body>
@@ -54,21 +69,21 @@
         </div>
 
         <div class="main-content">
-            <a class="image1-container hidden" href="portfolio-travel-street.html">
-                <div class="image1-background"></div>
-                <div class="text1">travel + street</div>
+            <a class="image1-container" href="portfolio-travel-street.html">
+                <div class="image1-background hidden"></div>
+                <div class="text1 hidden">travel + street</div>
             </a>
-            <a class="image2-container hidden" href="portfolio-portraits.html">
-                <div class="image2-background"></div>
-                <div class="text2">portraits + people</div>
+            <a class="image2-container" href="portfolio-portraits.html">
+                <div class="image2-background hidden"></div>
+                <div class="text2 hidden">portraits + people</div>
             </a>
-            <a class="video-container hidden" href="https://www.youtube.com/@aid_hin/videos" target="_blank">
-                <div class="video-background">
+            <a class="video-container" href="https://www.youtube.com/@aid_hin/videos" target="_blank">
+                <div class="video-background hidden">
                     <video id="background-video" autoplay muted loop playsinline>
                         <source src="short-clip-720p.mp4" type="video/mp4">
                     </video>
                 </div>
-                <div class="text3">videos</div>
+                <div class="text3 hidden">videos</div>
             </a>
 
             <div class="copyright-container">
