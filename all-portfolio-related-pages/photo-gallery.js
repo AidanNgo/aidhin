@@ -66,9 +66,6 @@ hiddenElements.forEach((el) => observer.observe(el));
 // Prevent context menu on long-press or right-click
 document.addEventListener('contextmenu', function (event) {
     event.preventDefault();
-    if (event.target.tagName === 'IMG') {
-      event.preventDefault();
-    }
   });
   
   // Prevent text selection on long-press
