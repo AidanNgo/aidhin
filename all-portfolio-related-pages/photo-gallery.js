@@ -96,7 +96,4 @@ document.addEventListener('contextmenu', function (event) {
     if (event.touches.length > 1) {
       event.preventDefault();
     }
-    if (event.target.tagName === 'IMG') {
-      event.preventDefault();
-    }
   }, { passive: false });
