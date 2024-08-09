@@ -66,6 +66,9 @@ hiddenElements.forEach((el) => observer.observe(el));
 // Prevent context menu on long-press or right-click
 document.addEventListener('contextmenu', function (event) {
     event.preventDefault();
+    if (event.target.tagName === 'IMG') {
+      event.preventDefault();
+    }
   });
   
   // Prevent text selection on long-press
@@ -78,16 +81,10 @@ document.addEventListener('contextmenu', function (event) {
     if (event.touches.length > 1) {
       event.preventDefault();
     }
-    if (event.target.tagName === 'IMG') {
-      event.preventDefault();
-    }
   }, { passive: false });
   
   document.addEventListener('touchend', function (event) {
     if (event.touches.length > 1) {
-      event.preventDefault();
-    }
-    if (event.target.tagName === 'IMG') {
       event.preventDefault();
     }
   }, { passive: false });
